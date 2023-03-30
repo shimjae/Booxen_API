@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Idotbi_WemakePrice&apos; to &apos;Idotbi_SSG&apos;&#x0D;&#x0A;- Original project: &apos;Idotbi_SSG&apos;&#x0D;&#x0A;- Original element: &apos;Idotbi_WemakePrice&apos;&#x0D;&#x0A;- Renamed element: &apos;Idotbi_SSG&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Idotbi_WemakePrice&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Idotbi_WemakePrice.java[Idotbi_WemakePrice" matchStrategy="1" name="Idotbi_SSG" qualified="false" references="true" similarDeclarations="false" stamp="1619944881215" textual="false" version="1.0"/>
+</session>

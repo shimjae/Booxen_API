@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  
+<configuration>
+    <typeAliases>
+        <typeAlias alias="Goods" type="model.Goods"/>        
+    </typeAliases>
+  
+    <environments default="development">
+        <environment id="development">
+          <transactionManager type="JDBC"/>
+            <!--  connecting to Local MySql -->
+            <dataSource type="POOLED">
+                <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+                <property name="url" value="jdbc:oracle:thin:@112.175.145.76:1522:CADENZA"/>
+                <property name="username" value="bxifuser"/>
+                <property name="password" value="pwd!!bxif"/>
+            </dataSource>
+       </environment>
+    </environments>
+    <mappers> 
+     
+          <mapper url="file:D:/Batch/SmartStore/Goods.xml"/>
+        <!-- <mapper resource="resources/Goods.xml"/>-->
+    </mappers>
+</configuration>

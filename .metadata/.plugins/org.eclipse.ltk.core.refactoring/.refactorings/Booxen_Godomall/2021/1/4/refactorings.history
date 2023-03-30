@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;RegGodoMall_Main&apos; to &apos;Booxen_Godomall&apos;&#x0D;&#x0A;- Original project: &apos;Booxen_Godomall&apos;&#x0D;&#x0A;- Original element: &apos;RegGodoMall_Main&apos;&#x0D;&#x0A;- Renamed element: &apos;Booxen_Godomall&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;RegGodoMall_Main&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{RegGodoMall_Main.java[RegGodoMall_Main" matchStrategy="1" name="Booxen_Godomall" qualified="false" references="true" similarDeclarations="false" stamp="1611405658501" textual="false" version="1.0"/>
+</session>

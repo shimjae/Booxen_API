@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n    <expression enabled\="true" text\="response.getStatusLine().getStatusCode()"/>\r\n    <expression enabled\="true" text\="ZlocalCcDesc.length()"/>\r\n    <expression enabled\="true" text\="Element"/>\r\n    <expression enabled\="true" text\="bookInfo.get_OPENDATE()"/>\r\n</watchExpressions>\r\n

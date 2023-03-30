@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/2021-11-18-스마트스토어-API-통합-레퍼런스/3.Sample Code/ProductSample/ProductSample/Java/src/main/java/com/nbp/nmp/shopn/product/ManageProductSample.java"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.nbp.nmp.shopn.product.ManageProductSample"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="2021-11-18-스마트스토어-API-통합-레퍼런스"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="2021-11-18-스마트스토어-API-통합-레퍼런스"/>
+</launchConfiguration>

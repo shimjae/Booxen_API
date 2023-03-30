@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Shaplinker_Main&apos; to &apos;Booxen_Shaplinker&apos;&#x0D;&#x0A;- Original project: &apos;Booxen_Shaplinker&apos;&#x0D;&#x0A;- Original element: &apos;Shaplinker_Main&apos;&#x0D;&#x0A;- Renamed element: &apos;Booxen_Shaplinker&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Shaplinker_Main&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Shaplinker_Main.java[Shaplinker_Main" matchStrategy="1" name="Booxen_Shaplinker" qualified="false" references="true" similarDeclarations="false" stamp="1611403388575" textual="false" version="1.0"/>
+</session>

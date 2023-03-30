@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="RepositorySelectionPage.lastRepository" value="https://localhost/Booxen_API"/>
+	<item key="DirectorySelectionPage.lastParent_https://localhost/Booxen_API" value=""/>
+	<item key="CommitDialog.location.x" value="163"/>
+	<item key="CommitDialog.location.y" value="0"/>
+	<item key="CommitDialog.size.x" value="1174"/>
+	<item key="CommitDialog.size.y" value="1040"/>
+	<item key="CommitDialog.weights.0" value="500"/>
+	<item key="CommitDialog.weights.1" value="500"/>
+	<item key="RevertDialog.location.x" value="698"/>
+	<item key="RevertDialog.location.y" value="264"/>
+	<item key="RevertDialog.size.x" value="525"/>
+	<item key="RevertDialog.size.y" value="385"/>
+	<item key="HistoryTableProvider.SVNHistoryPage.Revision" value="183"/>
+	<item key="HistoryTableProvider.SVNHistoryPage.Date" value="455"/>
+	<item key="HistoryTableProvider.SVNHistoryPage.Author" value="364"/>
+	<item key="HistoryTableProvider.SVNHistoryPage.Comment" value="910"/>
+	<item key="UpdateDialogWithConflictHandling.location.x" value="698"/>
+	<item key="UpdateDialogWithConflictHandling.location.y" value="36"/>
+	<item key="UpdateDialogWithConflictHandling.size.x" value="525"/>
+	<item key="UpdateDialogWithConflictHandling.size.y" value="727"/>
+	<item key="DifferencesDialog.location.x" value="599"/>
+	<item key="DifferencesDialog.location.y" value="259"/>
+	<item key="DifferencesDialog.size.x" value="723"/>
+	<item key="DifferencesDialog.size.y" value="392"/>
+	<section name="NewLocationWizard">
+	</section>
+	<section name="CommitWizard">
+		<item key="VWeight1" value="500"/>
+		<item key="VWeight2" value="500"/>
+		<item key="ShowCompare" value="false"/>
+	</section>
+</section>

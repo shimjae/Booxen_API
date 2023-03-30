@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Booxen_SSG_General&apos; to &apos;Booxen_SSG_Emart&apos;" description="Rename resource &apos;Booxen_SSG_General&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Booxen_SSG_General" name="Booxen_SSG_Emart" stamp="1661052125629" updateReferences="true"/>
+</session>

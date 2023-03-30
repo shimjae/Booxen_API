@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Booxen_SSG&apos; to &apos;Booxen_SSG_General&apos;&#x0D;&#x0A;- Original project: &apos;Booxen_SSG_General&apos;&#x0D;&#x0A;- Original element: &apos;Booxen_SSG&apos;&#x0D;&#x0A;- Renamed element: &apos;Booxen_SSG_General&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Booxen_SSG&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Booxen_SSG.java[Booxen_SSG" matchStrategy="1" name="Booxen_SSG_General" qualified="false" references="true" similarDeclarations="false" stamp="1660788595735" textual="false" version="1.0"/>
+</session>

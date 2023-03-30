@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;WemakePrice_Product&apos; to &apos;Booxen_WemakePrice&apos;&#x0D;&#x0A;- Original project: &apos;Booxen_WemakePrice&apos;&#x0D;&#x0A;- Original element: &apos;WemakePrice_Product&apos;&#x0D;&#x0A;- Renamed element: &apos;Booxen_WemakePrice&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;WemakePrice_Product&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{WemakePrice_Product.java[WemakePrice_Product" matchStrategy="1" name="Booxen_WemakePrice" qualified="false" references="true" similarDeclarations="false" stamp="1611403928379" textual="false" version="1.0"/>
+</session>

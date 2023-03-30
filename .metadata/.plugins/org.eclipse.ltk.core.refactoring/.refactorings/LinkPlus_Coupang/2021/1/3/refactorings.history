@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Reg_Idotbi_Coupang_Main&apos; to &apos;LinkPlus_Coupang_Main&apos;&#x0D;&#x0A;- Original project: &apos;LinkPlus_Coupang&apos;&#x0D;&#x0A;- Original element: &apos;Reg_Idotbi_Coupang_Main&apos;&#x0D;&#x0A;- Renamed element: &apos;LinkPlus_Coupang_Main&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Reg_Idotbi_Coupang_Main&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Reg_Idotbi_Coupang_Main.java[Reg_Idotbi_Coupang_Main" matchStrategy="1" name="LinkPlus_Coupang_Main" qualified="false" references="true" similarDeclarations="false" stamp="1610340503336" textual="false" version="1.0"/>
+</session>

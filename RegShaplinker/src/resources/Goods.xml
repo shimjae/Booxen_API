@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="Goods">
+  
+    <resultMap id="result" type="Goods">
+        <result property="ITEMCD" column="ITEMCD"/>
+        <result property="ISBN13" column="ISBN13"/>   
+        <result property="BOOK_NM" column="BOOK_NM"/>
+        <result property="PUBLISHER" column="PUBLISHER"/>
+        <result property="AUTHR" column="AUTHR"/>        
+        <result property="OPENDATE" column="OPENDATE"/>
+        <result property="IMG_PATH2" column="IMG_PATH2"/>
+        <result property="BOOK_MG_VAL" column="BOOK_MG_VAL"/>
+        <result property="BOOK_WT_VAL" column="BOOK_WT_VAL"/>
+        <result property="BOOK_PAGE_VAL" column="BOOK_PAGE_VAL"/>
+        <result property="BOOKSTS" column="BOOKSTS"/>
+        <result property="INRT" column="INRT"/>
+        <result property="BOOK_INTRCN_CN" column="BOOK_INTRCN_CN"/>
+        <result property="AUTHR_INTRCN_CN" column="AUTHR_INTRCN_CN"/>
+        <result property="PLSCMPN_BKRVW_CN" column="PLSCMPN_BKRVW_CN"/>
+        <result property="CNTNT_CN" column="CNTNT_CN"/>
+        <result property="BORIBORI_ITEMCD" column="BORIBORI_ITEMCD"/>      
+        <result property="SALEPRICE" column="SALEPRICE"/>
+        <result property="PRICE" column="PRICE"/>
+        <result property="BX_CATECD" column="BX_CATECD"/>
+        
+    </resultMap>
+  
+    <resultMap id="Result_Shap" type="Goods">
+      
+        <result property="BOOK_NM" column="BOOK_NM"/>
+        <result property="ISBN13" column="ISBN13"/>
+        <result property="SHAP_BOOKSTS" column="SHAP_BOOKSTS"/>
+        <result property="PRODUCT_ID" column="FARM_PRODUCT_ID"/>
+        <result property="FARM_PRODUCT_ID" column="FARM_PRODUCT_ID"/>
+        <result property="BENEPIA_PRODUCT_ID" column="BENEPIA_PRODUCT_ID"/>
+        
+        
+    </resultMap>
+    
+      <select id="GetCategoryList" resultType="map">
+    <![CDATA[
+         select KYOBO_CATE_CD from IF_BOOXEN_CATEGORY_TBL WHERE BOOXEN_CATE_CD= #{BOOXEN_CATE_CD} and rownum = 1
+        ]]> 
+    </select>
+    
+    <select id="GetGoodsList" resultMap="result">
+    <![CDATA[
+        select * from VX_IFBIBLIO_ONLINE A
+		WHERE ADDTIME >=TO_CHAR(sysdate -  7,'YYYYMMDD') AND BOOKSTS||'' IN ('현매','정상') AND  img_path2 is not null
+		AND INRT <=75 AND NOT EXISTS (SELECT 1 FROM if_shaplinker_tbl WHERE ISBN13 = A.ISBN13)
+        ]]> 
+    </select>
+    
+     <select id="GetUptGoodsList" resultMap="result">
+      <![CDATA[
+			SELECT B.*
+			FROM if_shaplinker_tbl A, VX_IFBIBLIO_ONLINE B
+			WHERE A.ISBN13 = B.ISBN13
+			AND A.BOOKSTS <> B.BOOKSTS
+			AND (FARM_PRODUCT_ID IS NOT NULL OR BENEPIA_PRODUCT_ID IS NOT NULL)
+       ]]> 
+    </select>
+    
+  
+    <select id="GetExistGoodsList" parameterType="hashmap" resultType="int">
+	 <![CDATA[
+        select count(*)from IF_SHAPLINKER_TBL WHERE ISBN13 = #{ISBN13}
+		  ]]> 
+    </select>
+  
+  
+    <select id="GetShplinkerGoodsList" resultMap="Result_Shap">
+		 <![CDATA[
+        select PRODUCT_ID,ISBN13,BOOK_NM,BOOKSTS ,FARM_PRODUCT_ID,BENEPIA_PRODUCT_ID from  IF_SHAPLINKER_TBL WHERE ISBN13 =#{ISBN13}
+		 ]]> 
+    </select>
+    
+    
+    <insert id="InsertRegItem" parameterType="String" >
+	 <![CDATA[
+        INSERT INTO IF_SHAPLINKER_TBL(YYYYMMDD,ITEMCD,PRODUCT_ID,ISBN13,BOOK_NM,CRT_DT,BOOKSTS) VALUES (TO_CHAR(SYSDATE,'YYYYMMDD') , #{ITEMCD}, #{PRODUCT_ID},#{ISBN13} ,#{BOOK_NM} ,SYSDATE,#{BOOKSTS})
+		 ]]> 
+    </insert>
+  
+    <update id="UptStatusItem" parameterType="String">
+	 <![CDATA[
+        UPDATE IF_SHAPLINKER_TBL
+        SET BOOKSTS = #{BOOKSTS} , UPT_DT = SYSDATE
+        WHERE ISBN13 = #{ISBN13}
+		 ]]> 
+    </update>
+   
+        <update id="RegMallProduct_id_Benepia" parameterType="String">
+		<![CDATA[
+        UPDATE IF_SHAPLINKER_TBL
+        SET BENEPIA_PRODUCT_ID = #{BENEPIA_PRODUCT_ID} 
+        WHERE PRODUCT_ID = #{PRODUCT_ID}
+		 ]]> 
+    </update>
+    
+     <update id="RegMallProduct_id_Farm" parameterType="String">
+	 <![CDATA[
+        UPDATE IF_SHAPLINKER_TBL
+        SET FARM_PRODUCT_ID = #{FARM_PRODUCT_ID} 
+        WHERE PRODUCT_ID = #{PRODUCT_ID}
+		 ]]> 
+    </update>
+    
+  
+     <insert id="InsertError" parameterType="String" >
+	 <![CDATA[
+        INSERT INTO IF_AUCTION_LOG_TBL (SITE,ERROR_GUBUN,ISBN13,ITEMCD,MSG,CRT_DT) 
+		VALUES 	(#{SITE}, #{ERROR_GUBUN}, #{ISBN13},#{ITEMCD},#{MSG},SYSDATE)	
+ ]]> 		
+    	</insert>
+     <select id="GetExistBooxenOrderList" parameterType="hashmap" resultType="int">
+	 <![CDATA[
+        select count(*) from API_ORDER_MST WHERE MALL_ID =#{MALL_ID} AND ORD_ID  = #{ORD_ID} AND ISBN13=#{ISBN13}
+		 ]]> 
+    	</select>
+    	
+    	 <insert id="InsertBooxenOrdList" parameterType="String" >
+		 <![CDATA[
+            INSERT INTO API_ORDER_MST( ORD_DATE,MALL_ID,SELLER_ID,ORD_ID,ORD_NO,SELL_QTY,SELL_AMT,SELL_TOTAMT,ISBN13,ITEM_NM,DLV_PRICE,DLV_POST,DLV_ADDR1,DLV_MSG,DLV_NM,DLV_TEL,DLV_HP,ORD_STS,ADDUSER,ORD_TMP1
+                                              )VALUES(#{ORDERYMD},#{MALL_ID},#{SELLER_ID},#{PORDNUM},#{ORDSEQ},#{QTY},#{SELL_AMT},#{SALPRI},#{ISBN13},#{ITEM_NM},#{DELIPRI},#{TOZICD},#{TOADDR},#{MEMO},#{TONM},#{TOTEL},#{TOEMTEL},'I','TED',#{ORD_TMP1}
+												)
+												 ]]> 
+    	</insert>
+		<select id="GetOrderSeq" parameterType="hashmap" resultType="int">
+	 <![CDATA[
+        select COUNT(*) +1 from API_ORDER_MST WHERE MALL_ID =#{MALL_ID} AND ORD_ID  = #{ORD_ID}
+		 ]]> 
+    	</select>
+		 <insert id="InsertError" parameterType="String" >
+	 <![CDATA[
+        INSERT INTO IF_AUCTION_LOG_TBL (SITE,ERROR_GUBUN,ISBN13,ITEMCD,MSG,CRT_DT) 
+		VALUES 	('BORIBORI', #{ERROR_GUBUN}, #{ISBN13},#{ITEMCD},#{MSG},SYSDATE)										
+		]]> 
+    	</insert>
+</mapper>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="5d5b2cb498f3d20001665f4e6c4dd70be6a147ceaabc99e7fe06e9db"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="5d5b2cb498f3d20001665f4e30b4177b121a46df889ae695b790dc2a"/>
+			<item value="cultureDeductionYn"/>
+			<item value="ipoint"/>
+			<item value="RegGoodsAPI"/>
+			<item value="getHttpHTML_POST_Upt"/>
+			<item value="GetXml_Status"/>
+			<item value="PRICE()"/>
+			<item value="saleUnitcost"/>
+			<item value="publicationDate"/>
+			<item value="54316"/>
+			<item value="proddelvCostUseYn"/>
+			<item value="shopNo"/>
+			<item value="211.115.107.33"/>
+			<item value="zoomImg"/>
+			<item value="prdBasisExplanEd"/>
+		</list>
+		<list key="replacehistory">
+			<item value="5d5b2cb498f3d20001665f4e6c4dd70be6a147ceaabc99e7fe06e9db"/>
+			<item value="00374799"/>
+			<item value="6e3503ac-d948-4a85-a130-95db5d7bdf3d"/>
+			<item value="SA001159"/>
+			<item value="51173"/>
+			<item value="5d5b2cb498f3d20001665f4e35f76fcabf9b4681af9c80db01cd6335"/>
+			<item value="0000033071"/>
+			<item value="22262"/>
+			<item value="0000405185S1"/>
+			<item value="T0009001"/>
+			<item value="CJ02225331300"/>
+			<item value="533130"/>
+			<item value="5d5b2cb498f3d20001665f4e30b4177b121a46df889ae695b790dc2a"/>
+			<item value="NO126"/>
+			<item value="//"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1035"/>
+		<item key="DIALOG_Y_ORIGIN" value="379"/>
+		<item key="DIALOG_WIDTH" value="288"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

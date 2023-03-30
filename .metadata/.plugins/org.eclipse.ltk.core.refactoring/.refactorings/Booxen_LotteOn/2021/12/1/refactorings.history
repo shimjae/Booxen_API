@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Idotbi_LotteOn.java&apos; to &apos;Booxen_LotteOn.java&apos;&#x0D;&#x0A;- Original project: &apos;Booxen_LotteOn&apos;&#x0D;&#x0A;- Original element: &apos;Idotbi_LotteOn.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Booxen_LotteOn.java&apos;" description="Rename compilation unit &apos;Idotbi_LotteOn.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{Idotbi_LotteOn.java" name="Booxen_LotteOn.java" references="false" stamp="1640692167921" version="1.0"/>
+</session>

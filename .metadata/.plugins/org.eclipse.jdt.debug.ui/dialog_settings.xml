@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=New_BoriBori_Booxen_API/src&amp;lt;{New_BoriBori_Booxen_API.java[New_BoriBori_Booxen_API&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Reg11st_Product_SAPI/src&amp;lt;{Reg11st_Main.java[Reg11st_Main&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=RegGodoMall_API/src&amp;lt;{RegGodoMall_Main.java[RegGodoMall_Main&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=BoriBori_Product_API/src&amp;lt;{BoriBori_Product.java[BoriBori_Product&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Reg_IdotBi_Coupang_API/src&amp;lt;{Reg_Idotbi_Coupang_Main.java[Reg_Idotbi_Coupang_Main&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=RegLotteOn_API/src&amp;lt;{LotteOn_API.java[LotteOn_API&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=BoriBori_Idotbi_API/src&amp;lt;{BoriBori_Idotbi_Product.java[BoriBori_Idotbi_Product&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=RegWemake_API/src&amp;lt;{WemakePrice_Product.java[WemakePrice_Product&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=LinkPlus_Coupang/src&amp;lt;{LinkPlus_Coupang_Main.java[LinkPlus_Coupang_Main&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=RegShaplinker/src&amp;lt;{Shaplinker_Main.java[Shaplinker_Main&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Idotbi_Godomall/src&amp;lt;{Idotbi_Godomall.java[Idotbi_Godomall&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=BookMouse_HalfClub/src&amp;lt;{BookMouse_HalfClub.java[BookMouse_HalfClub&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Idotbi_WemakePrice/src&amp;lt;{Idotbi_WemakePrice.java[Idotbi_WemakePrice&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Idotbi_SSG/src&amp;lt;{Idotbi_SSG.java[Idotbi_SSG&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Booxen_BaroGodoMall/src&amp;lt;{Booxen_BaroGodoMall.java[Booxen_BaroGodoMall&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Booxen_BoriBori/src&amp;lt;{Booxen_BoriBori.java[Booxen_BoriBori&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Booxen_Godomall/src&amp;lt;{Booxen_Godomall.java[Booxen_Godomall&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Idotbi_CJ/src&amp;lt;{Idotbi_CJ.java[Idotbi_CJ&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Idotbi_Coupang/src&amp;lt;{Idotbi_Coupang.java[Idotbi_Coupang&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="668"/>
+			<item key="DIALOG_Y_ORIGIN" value="195"/>
+			<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+		</section>
+	</section>
+	<section name="expressionHistory">
+	</section>
+	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
+		<item key="WIDTH" value="614"/>
+		<item key="HEIGHT" value="194"/>
+		<item key="SashWeightTree" value="496"/>
+		<item key="SashWeightDetails" value="503"/>
+	</section>
+	<section name="conditionHistory">
+	</section>
+</section>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Booxen_LotteOn&apos; to &apos;Idotbi_LotteOn&apos;&#x0D;&#x0A;- Original project: &apos;Idotbi_LotteOn&apos;&#x0D;&#x0A;- Original element: &apos;Booxen_LotteOn&apos;&#x0D;&#x0A;- Renamed element: &apos;Idotbi_LotteOn&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Booxen_LotteOn&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Booxen_LotteOn.java[Booxen_LotteOn" matchStrategy="1" name="Idotbi_LotteOn" qualified="false" references="true" similarDeclarations="false" stamp="1627721046827" textual="false" version="1.0"/>
+</session>

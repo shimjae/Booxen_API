@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syncparticipants>
+<participant displayName="SVN (/BookMouse_HalfClub, /BookMouse_LotteOn, /BookMouse_SSG, /Booxen_11st, /Booxen_BaroGodoMall, /Booxen_BoriBori, /Booxen_CJ, /Booxen_CJ/src/Booxen_CJ.java, /Booxen_GSShop, /Booxen_Godomall, /Booxen_HalfClub, /Booxen_LotteOn, /Booxen_SSG, /Booxen_SSG_Emart, /Booxen_Shaplinker, /Booxen_WemakePrice, /Idotbi_BoriBori, /Idotbi_CJ, /Idotbi_Coupang, /Idotbi_Godomall, /Idotbi_LotteOn, /Idotbi_SSG, /Idotbi_WemakePrice, /LinkPlus_Coupang)" id="org.tigris.subversion.subclipse.participant" secondary_id="1661325539496">
+<data root="false">
+<org.eclipse.team.ui.TEAMSUBSRCIBERSETTINGS org.eclipse.team.ui.SCOPE_TYPE="ResourceScope">
+<org.eclipse.team.ui.TEAMSUBSRCIBER_REFRESHSCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
+<resource_scope_roots resource_scope_root_resource="/BookMouse_HalfClub"/>
+<resource_scope_roots resource_scope_root_resource="/BookMouse_LotteOn"/>
+<resource_scope_roots resource_scope_root_resource="/BookMouse_SSG"/>
+<resource_scope_roots resource_scope_root_resource="/Booxen_11st"/>
+<resource_scope_roots resource_scope_root_resource="/Booxen_BaroGodoMall"/>
+<resource_scope_roots resource_scope_root_resource="/Booxen_BoriBori"/>
+<resource_scope_roots resource_scope_root_resource="/Booxen_CJ"/>
+<resource_scope_roots resource_scope_root_resource="/Booxen_CJ/src/Booxen_CJ.java"/>
+<resource_scope_roots resource_scope_root_resource="/Booxen_GSShop"/>
+<resource_scope_roots resource_scope_root_resource="/Booxen_Godomall"/>
+<resource_scope_roots resource_scope_root_resource="/Booxen_HalfClub"/>
+<resource_scope_roots resource_scope_root_resource="/Booxen_LotteOn"/>
+<resource_scope_roots resource_scope_root_resource="/Booxen_SSG"/>
+<resource_scope_roots resource_scope_root_resource="/Booxen_SSG_Emart"/>
+<resource_scope_roots resource_scope_root_resource="/Booxen_Shaplinker"/>
+<resource_scope_roots resource_scope_root_resource="/Booxen_WemakePrice"/>
+<resource_scope_roots resource_scope_root_resource="/Idotbi_BoriBori"/>
+<resource_scope_roots resource_scope_root_resource="/Idotbi_CJ"/>
+<resource_scope_roots resource_scope_root_resource="/Idotbi_Coupang"/>
+<resource_scope_roots resource_scope_root_resource="/Idotbi_Godomall"/>
+<resource_scope_roots resource_scope_root_resource="/Idotbi_LotteOn"/>
+<resource_scope_roots resource_scope_root_resource="/Idotbi_SSG"/>
+<resource_scope_roots resource_scope_root_resource="/Idotbi_WemakePrice"/>
+<resource_scope_roots resource_scope_root_resource="/LinkPlus_Coupang"/>
+</org.eclipse.team.ui.TEAMSUBSRCIBERSETTINGS>
+</data>
+</participant>
+</syncparticipants>

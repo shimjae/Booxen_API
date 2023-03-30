@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;RegBooxen_Main&apos; to &apos;Idotbi_Godomall&apos;&#x0D;&#x0A;- Original project: &apos;Idotbi_Godomall&apos;&#x0D;&#x0A;- Original element: &apos;RegBooxen_Main&apos;&#x0D;&#x0A;- Renamed element: &apos;Idotbi_Godomall&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;RegBooxen_Main&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{RegBooxen_Main.java[RegBooxen_Main" matchStrategy="1" name="Idotbi_Godomall" qualified="false" references="true" similarDeclarations="false" stamp="1611404955076" textual="false" version="1.0"/>
+</session>
