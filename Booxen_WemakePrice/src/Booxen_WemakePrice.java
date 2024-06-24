@@ -74,8 +74,6 @@ import org.json.simple.parser.JSONParser;
 
 import java.util.Date;
 
-
-
 public class Booxen_WemakePrice {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
