@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="Goods">
+  
+    <resultMap id="result" type="Goods">
+        <result property="ITEMCD" column="ITEMCD"/>
+        <result property="ISBN13" column="ISBN13"/>   
+        <result property="BOOK_NM" column="BOOK_NM"/>
+        <result property="PUBLISHER" column="PUBLISHER"/>
+        <result property="AUTHR" column="AUTHR"/>        
+        <result property="OPENDATE" column="OPENDATE"/>
+        <result property="IMG_PATH2" column="IMG_PATH2"/>
+        <result property="BOOK_MG_VAL" column="BOOK_MG_VAL"/>
+        <result property="BOOK_WT_VAL" column="BOOK_WT_VAL"/>
+        <result property="BOOK_PAGE_VAL" column="BOOK_PAGE_VAL"/>
+        <result property="BOOKSTS" column="BOOKSTS"/>
+        <result property="INRT" column="INRT"/>
+        <result property="BOOK_INTRCN_CN" column="BOOK_INTRCN_CN"/>
+        <result property="AUTHR_INTRCN_CN" column="AUTHR_INTRCN_CN"/>
+        <result property="PLSCMPN_BKRVW_CN" column="PLSCMPN_BKRVW_CN"/>
+        <result property="CNTNT_CN" column="CNTNT_CN"/>
+        <result property="BORIBORI_ITEMCD" column="BORIBORI_ITEMCD"/>      
+        <result property="SALEPRICE" column="SALEPRICE"/>
+        <result property="PRICE" column="PRICE"/>
+		<result property="BX_CATECD" column="BX_CATECD"/>
+    </resultMap>
+  
+    <resultMap id="Result_BoriBori" type="Goods">
+      
+        <result property="BOOK_NM" column="BOOK_NM"/>
+        <result property="ISBN13" column="ISBN13"/>
+        
+    </resultMap>
+      
+    
+    <select id="GetGoodsList" resultMap="result">
+	<![CDATA[
+          select * from VX_IFBIBLIO_ONLINE A
+		WHERE ADDTIME >=TO_CHAR(sysdate -  1,'YYYYMMDD') AND BOOKSTS||'' IN ('현매','정상') AND  img_path2 is not null
+		AND INRT <=75 AND NOT EXISTS (SELECT 1 FROM IF_BORIBORI_TBL WHERE ISBN13 = A.ISBN13) and INCOMPANYCD <> '20720'			
+		]]> 
+    </select>
+      <select id="GetCategoryList" resultType="map">
+    <![CDATA[
+          SELECT BORIBORI_CATE_CD FROM IF_BORIBORI_CATEGORY_TBL WHERE BOOXEN_CATE_CD = #{BOOXEN_CATE_CD} and rownum = 1
+        ]]> 
+    </select>
+	
+     <select id="GetUptGoodsList" resultMap="result">
+	 <![CDATA[
+        	SELECT A.BORIBORI_ITEMCD ,B.*
+			FROM IF_BORIBORI_TBL A, VX_IFBIBLIO_ONLINE B
+			WHERE A.ISBN13 = B.ISBN13
+			AND A.BOOKSTS <> B.BOOKSTS	
+			and INCOMPANYCD <> '20720'			
+			]]> 
+    </select>
+    
+  
+    <select id="GetExistGoodsList" parameterType="hashmap" resultType="int">
+	<![CDATA[
+        select count(*)from IF_BORIBORI_TBL WHERE ISBN13 = #{ISBN13}
+		]]> 
+    </select>
+  
+    <insert id="InsertRegItem" parameterType="String" >
+	<![CDATA[
+        INSERT INTO IF_BORIBORI_TBL(YYYYMMDD,ITEMCD,BORIBORI_ITEMCD,ISBN13,BOOK_NM,CRT_DT,BOOKSTS,SALEPRICE,PRICE) VALUES (TO_CHAR(SYSDATE,'YYYYMMDD') , #{ITEMCD}, #{BORIBORI_ITEMCD},#{ISBN13} ,#{BOOK_NM} ,SYSDATE,#{BOOKSTS},#{SALEPRICE},#{PRICE})
+		]]> 
+    </insert>
+  
+    <update id="UptRegItem" parameterType="String">
+	<![CDATA[
+        UPDATE IF_BORIBORI_TBL
+        SET BOOKSTS = #{BOOKSTS} , UPT_DT = SYSDATE
+        WHERE ISBN13 = #{ISBN13}
+		]]> 
+    </update>
+  
+       <select id="GetExistBooxenOrderList" parameterType="hashmap" resultType="int">
+	   <![CDATA[
+        select count(*) from API_ORDER_MST WHERE MALL_ID ='50289' AND ORD_ID  = #{ORD_ID} AND ISBN13=#{ISBN13}
+		]]> 
+    	</select>
+		
+	   
+    	
+    	 <insert id="InsertBooxenOrdList" parameterType="String" >
+		 <![CDATA[
+        INSERT INTO API_ORDER_MST( ORD_DATE,MALL_ID,SELLER_ID,ORD_ID,ORD_NO,SELL_QTY,SELL_AMT,SELL_TOTAMT,ISBN13,ITEM_NM,DLV_PRICE,DLV_POST,DLV_ADDR1,DLV_MSG,DLV_NM,DLV_TEL,DLV_HP,ORD_STS,ADDUSER
+                                              )VALUES(#{ORDERYMD},#{MALL_ID},#{SELLER_ID},#{PORDNUM},#{ORDSEQ},#{QTY},#{SELL_AMT},#{SALPRI},#{ISBN13},#{ITEM_NM},#{DELIPRI},#{TOZICD},#{TOADDR},#{MEMO},#{TONM},#{TOTEL},#{TOEMTEL},'I','TED'
+												)
+		]]> 												
+    	</insert>
+		
+		<select id="GetExistBooxenDetailOrderList" parameterType="hashmap" resultType="int">
+	   <![CDATA[
+        select count(*) from API_ORDER_DETAIL WHERE   ORD_ID  = #{ORD_ID} AND ISBN13=#{ISBN13} AND ORD_NO=#{ORD_NO}
+		]]> 
+    	</select>
+		
+		 <insert id="InsertBooxenDetailList" parameterType="String" >
+		 <![CDATA[
+        INSERT INTO API_ORDER_DETAIL( ORD_DATE,ORD_ID,ORD_NO,SELL_QTY,SELL_AMT,SELL_TOTAMT,ISBN13,ADDTIME
+                                              )VALUES(#{ORDERYMD},#{PORDNUM},#{ORDSEQ},#{QTY},#{SELL_AMT},#{SALPRI},#{ISBN13},SYSDATE
+												)
+		]]> 												
+    	</insert>
+		
+  <update id="UptBooxenOrdList" parameterType="String">
+	<![CDATA[
+        UPDATE API_ORDER_MST
+        SET SELL_QTY = SELL_QTY + #{SELL_QTY} , SELL_AMT = SELL_AMT + #{SELL_AMT} , SELL_TOTAMT = SELL_TOTAMT + #{SALPRI}
+        WHERE MALL_ID ='50289' AND ORD_ID = #{PORDNUM}
+		]]> 
+    </update>
+	
+    	
+    	 <select id="GetBoriboriGoodsList" resultMap="Result_BoriBori" parameterType="hashmap">
+		 <![CDATA[
+        	select * from IF_BORIBORI_TBL WHERE ISBN13 =#{ISBN13}
+			]]> 
+    	</select>
+    
+     <insert id="InsertError" parameterType="String" >
+	 <![CDATA[
+        INSERT INTO IF_AUCTION_LOG_TBL (SITE,ERROR_GUBUN,ISBN13,ITEMCD,MSG,CRT_DT) 
+		VALUES 	('BORIBORI', #{ERROR_GUBUN}, #{ISBN13},#{ITEMCD},#{MSG},SYSDATE)										
+		]]> 
+    	</insert>
+    
+</mapper>
