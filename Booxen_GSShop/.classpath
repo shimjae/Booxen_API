@@ -6,24 +6,27 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/commons-cli-1.2.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/commons-codec-1.10.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/fluent-hc-4.5.6.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/httpclient-4.5.6.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/httpclient-cache-4.5.6.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/httpclient-win-4.5.6.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/httpcore-4.4.10.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/httpcore-ab-4.4.10.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/httpcore-nio-4.4.10.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/httpmime-4.5.6.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/ibatis-2.3.4.726.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/jna-4.4.0.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/jna-platform-4.4.0.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/ojdbc6.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/openapi-hmac-sdk-1.0.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/gson-2.6.2.jar"/>
-	<classpathentry kind="lib" path="D:/booxen_API/RegShaplinker/lib/mybatis-3.5.5.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk-14/lib/jrt-fs.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/commons-cli-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/fluent-hc-4.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/gson-2.6.2.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/httpclient-4.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/httpclient-cache-4.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/httpclient-win-4.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/httpcore-4.4.10.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/httpcore-ab-4.4.10.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/httpcore-nio-4.4.10.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/httpmime-4.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/ibatis-2.3.4.726.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/javax.xml.soap-api-1.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/jna-4.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/jna-platform-4.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/mybatis-3.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/mybatis-3.5.5.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="D:/Source/Java/lib/openapi-hmac-sdk-1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
