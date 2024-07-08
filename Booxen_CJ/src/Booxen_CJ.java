@@ -1752,7 +1752,7 @@ public void UptGoods(Goods bookInfo) {
         sb.append("           <tns:typeCd>01</tns:typeCd>"); //코드구분(01:판매코드,02:단품코드)
         sb.append("           <tns:itemCd_zip>"+bookInfo.get_PRODUCTNO()+"</tns:itemCd_zip>"); //판매 및 단품코드
         sb.append("           <tns:chnCls>30</tns:chnCls>"); //가등록채널구분(30:인터넷)
-        if (bookInfo.get_BOOKSTS().equals("현매") || bookInfo.get_BOOKSTS().equals("정상"))
+        if (bookInfo.get_BOOKSTS().equals("현매") || bookInfo.get_BOOKSTS().equals("정상")|| bookInfo.get_BOOKSTS().equals("발간예정"))
         {
             sb.append("           <tns:packInd>A</tns:packInd>"); //판매구분(A:진행,I:일시중단)-
         }else {
