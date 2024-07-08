@@ -127,7 +127,7 @@ public class Booxen_CJ {
 					{
 						int Pcnt = goodsDAO.GetExistGoodsList(bookInfo.get_ISBN13());
 						Pcnt =0;
-						if (Pcnt < 1 && (bookInfo.get_BOOKSTS().equals("정상") || bookInfo.get_BOOKSTS().equals("현매"))) 
+						if (Pcnt < 1 && (bookInfo.get_BOOKSTS().equals("정상") || bookInfo.get_BOOKSTS().equals("현매")|| bookInfo.get_BOOKSTS().equals("발간예정"))) 
 						{
 							
 							
