@@ -2217,12 +2217,13 @@ public void UptGoods(Goods bookInfo) {
 					if (successYn.equals("true"))
 					{
 						
+						
 						java.util.HashMap<String, Object> map_1 = new HashMap<String, Object>();						
 						map_1.put("ITEMCD", bookInfo.get_ITEMCD());
 						map_1.put("PRODUCTNO", bookInfo.get_PRODUCTNO());
 						map_1.put("ISBN13", bookInfo.get_ISBN13());
 						map_1.put("BOOK_NM", bookInfo.get_BOOK_NM());
-						map_1.put("BOOKSTS", bookInfo.get_BOOKSTS());
+						map_1.put("BOOKSTS", bookInfo.get_BOOKSTS()));
 						map_1.put("SALEPRICE", bookInfo.get_SALEPRICE());
 						map_1.put("PRICE", bookInfo.get_PRICE());
 						
