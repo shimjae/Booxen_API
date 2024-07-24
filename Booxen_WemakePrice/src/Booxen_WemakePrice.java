@@ -128,7 +128,7 @@ public class Booxen_WemakePrice {
 					// TODO: handle exception
 				}
 				
-			    
+			    /*
 			    System.out.println("=====상품등록 start=====");
 
 				List<Goods> bookList = goodsDAO.GetGoodsList();
@@ -154,7 +154,7 @@ public class Booxen_WemakePrice {
 				 
 				
 				
-			
+			*/
 			
 			   
 				
@@ -982,7 +982,7 @@ class work {
         
         if (bookInfo.get_BOOKSTS().equals("현매") || bookInfo.get_BOOKSTS().equals("정상"))
         {
-        	SaleInfo.put("stockCount", 99999);
+        	SaleInfo.put("stockCount", 0);
 //SaleInfo.put("stockCount", 0);	
         	
         	//DelRegItem(bookInfo.get_ISBN13());;

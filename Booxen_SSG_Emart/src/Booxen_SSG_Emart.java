@@ -95,6 +95,7 @@ public class Booxen_SSG_Emart {
 				
 		    	try {
 		    		 work wk = new work();
+		    		 wk.Get_PRDInfo();
 		    		 wk.GetTransNoList();
 		    		
 		    	}catch (Exception e) {
@@ -176,6 +177,57 @@ public class Booxen_SSG_Emart {
 
 class work {
 	
+	public void Get_PRDInfo() {
+		String Key="01eaeaab-c583-4e6c-a045-d8dd78ad2cd4";
+		String response = "";
+		
+		try {
+			
+			URL url = new URL("http://eapi.ssgadm.com/common/0.2/listDispCtg.ssg?stdCtgDclsId=4000002581");
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+			conn.setRequestMethod("GET"); // 전송 방식
+			conn.setRequestProperty("Content-Type", "application/xml");
+			conn.setConnectTimeout(5000); // 연결 타임아웃 설정(5초) 
+			conn.setReadTimeout(5000); // 읽기 타임아웃 설정(5초)
+			conn.setDoOutput(true);
+			conn.setRequestProperty("Authorization", Key);
+			
+            
+			Charset charset = Charset.forName("UTF-8");
+			BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream(), charset));
+			
+			String inputLine;			
+			StringBuffer sb = new StringBuffer();
+			while ((inputLine = br.readLine()) != null) {
+				sb.append(inputLine);
+			}
+			br.close();
+			
+			response = sb.toString();
+			
+			
+			JSONParser jsonParser = new JSONParser();
+			JSONObject jsonObj = (JSONObject)jsonParser.parse( response );		
+			
+			String code = jsonObj.get("resultCode").toString();
+			String data ="";
+			if (code.equals("200"))
+			{
+				data = jsonObj.get("data").toString();
+				JSONObject jsonObj_data = (JSONObject)jsonParser.parse( data );
+				String _Sale = jsonObj_data.get("sale").toString();
+				
+				JSONObject _jsonObj_sale= (JSONObject)jsonParser.parse( _Sale );
+				
+			
+				
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
 	public void GetTransNoList()
 	{
 		try
