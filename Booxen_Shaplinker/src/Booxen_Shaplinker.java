@@ -222,7 +222,7 @@ public class Booxen_Shaplinker {
 			          //wk.Get_OrderInfo("APISHOP_0170", "0024774739", "51072"); //신세계닷컴
 			          //wk.Get_OrderInfo("APISHOP_0063", "0024774739", "51173"); //이마트
 			          wk.Get_OrderInfo("APISHOP_0231", "booxen01", "38112"); //삼성카드
-			          wk.Get_OrderInfo("APISHOP_0287", "booxen2020", "22275");//위메프2.0
+			          //wk.Get_OrderInfo("APISHOP_0287", "booxen2020", "22275");//위메프2.0
 			         // wk.Get_OrderInfo("APISHOP_0033", "AKM1418519641", "52816");//AK 몰
 			          
 			          
@@ -2621,7 +2621,7 @@ class work{
 				    	      {
 				    	    		 //6.WMP	
 				    	    	  System.out.println("=====9.SMP=====" + bookInfo.get_BOOK_NM());
-				    	    		  MallProductReg(bookInfo, product_id, "APISHOP_0287", "booxen2020", "00000036","WMP");
+				    	    		//  MallProductReg(bookInfo, product_id, "APISHOP_0287", "booxen2020", "00000036","WMP");
 									
 								 
 				    	      }
