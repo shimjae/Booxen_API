@@ -136,6 +136,7 @@ public class Booxen_SSG_Emart {
 						continue;
 						// TODO: handle exception
 					}			 
+					
 				}
 				System.out.println("=====상품등록  end=====");
 				
