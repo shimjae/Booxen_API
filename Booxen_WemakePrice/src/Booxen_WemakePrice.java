@@ -205,7 +205,7 @@ public class Booxen_WemakePrice {
 				}
 				System.out.println("=====상품가격수정 End=====");
 				*/
-				//Thread.sleep(100000000);
+				Thread.sleep(100000000);
 				System.exit(0);
 				
 			} catch (Exception e) {

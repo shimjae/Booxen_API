@@ -127,19 +127,14 @@ public class Booxen_CJ {
 					{
 						int Pcnt = goodsDAO.GetExistGoodsList(bookInfo.get_ISBN13());
 						Pcnt =0;
-						if (Pcnt < 1 && (bookInfo.get_BOOKSTS().equals("정상") || bookInfo.get_BOOKSTS().equals("현매")|| bookInfo.get_BOOKSTS().equals("발간예정"))) 
+						if (Pcnt < 1 ) 
 						{
 							
 							
-							
-							   if (bookInfo.get_ISBN13().substring(0,1).equals("9"))
-						        {
-								   System.out.println("ISBN13: " + bookInfo.get_ISBN13());
+							  System.out.println("ISBN13: " + bookInfo.get_ISBN13());
 
-								   work wk = new work();
-								   wk.RegGoodsAPI(bookInfo);    	 
-						       }
-							
+							   work wk = new work();
+							   wk.RegGoodsAPI(bookInfo); 
 							
 						}
 					}catch (Exception e) {
@@ -1327,66 +1322,6 @@ public void UptGoods(Goods bookInfo) {
         {
         	sb.append("<tns:goodsReport>");
             sb.append("<tns:pedfId>91059</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-            sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
-            sb.append("</tns:goodsReport>");
-            
-            
-             sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25417</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
-             sb.append("</tns:goodsReport>");
-
-             sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25246</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
-             sb.append("</tns:goodsReport>");
-             
-             sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25359</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
-             sb.append("</tns:goodsReport>");
-             
-             sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25394</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
-             sb.append("</tns:goodsReport>");
-             
-             sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25225</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
-             sb.append("</tns:goodsReport>");
-             
-             
-             
-             sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25290</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
-             sb.append("</tns:goodsReport>");
-             
-             
-             sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25204</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
-             sb.append("</tns:goodsReport>");
-             
-             sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25229</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
-             sb.append("</tns:goodsReport>");
-             
-             sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25424</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
-             sb.append("</tns:goodsReport>");
-             
-             sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25202</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-             sb.append("<tns:html><![CDATA[031-955-2852]]></tns:html>");//상품기술서_기술서상세내역-->
-             sb.append("</tns:goodsReport>");
-           
-        }else {
-            sb.append("<tns:goodsReport>");
-            sb.append("<tns:pedfId>91059</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
             sb.append("<tns:html><![CDATA["+GetGoodsBody_New(bookInfo)+"]]></tns:html>");//상품기술서_기술서상세내역-->
             sb.append("</tns:goodsReport>");
             
@@ -1401,6 +1336,71 @@ public void UptGoods(Goods bookInfo) {
              sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
              sb.append("</tns:goodsReport>");
              
+             sb.append("<tns:goodsReport>");
+             sb.append("<tns:pedfId>25225</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
+             sb.append("</tns:goodsReport>");
+             
+             
+             
+             sb.append("<tns:goodsReport>");
+             sb.append("<tns:pedfId>25330</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
+             sb.append("</tns:goodsReport>");
+             
+             
+             sb.append("<tns:goodsReport>");
+             sb.append("<tns:pedfId>25359</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
+             sb.append("</tns:goodsReport>");
+
+             sb.append("<tns:goodsReport>");
+             sb.append("<tns:pedfId>25383</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
+             sb.append("</tns:goodsReport>");
+             
+             sb.append("<tns:goodsReport>");
+             sb.append("<tns:pedfId>25394</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
+             sb.append("</tns:goodsReport>");
+             
+             sb.append("<tns:goodsReport>");
+             sb.append("<tns:pedfId>25395</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
+             sb.append("</tns:goodsReport>");
+             
+             sb.append("<tns:goodsReport>");
+             sb.append("<tns:pedfId>25424</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
+             sb.append("</tns:goodsReport>");
+             
+             sb.append("<tns:goodsReport>");
+             sb.append("<tns:pedfId>25450</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
+             sb.append("</tns:goodsReport>");
+           
+        }else {
+            sb.append("<tns:goodsReport>");
+            sb.append("<tns:pedfId>91059</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+            sb.append("<tns:html><![CDATA["+GetGoodsBody_New(bookInfo)+"]]></tns:html>");//상품기술서_기술서상세내역-->
+            sb.append("</tns:goodsReport>");
+            
+            sb.append("<tns:goodsReport>");
+            sb.append("<tns:pedfId>25222</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+            sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
+            sb.append("</tns:goodsReport>");
+            
+            
+            sb.append("<tns:goodsReport>");
+            sb.append("<tns:pedfId>25202</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+            sb.append("<tns:html><![CDATA[031-955-2852]]></tns:html>");//상품기술서_기술서상세내역-->
+            sb.append("</tns:goodsReport>");
+             /*
+             sb.append("<tns:goodsReport>");
+             sb.append("<tns:pedfId>25222</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
+             sb.append("</tns:goodsReport>");
+             */
              sb.append("<tns:goodsReport>");
              sb.append("<tns:pedfId>25225</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
              sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
@@ -1577,27 +1577,17 @@ public void UptGoods(Goods bookInfo) {
         {
         	sb.append("<tns:goodsReport>");
             sb.append("<tns:pedfId>91059</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-            sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
+            sb.append("<tns:html><![CDATA["+GetGoodsBody_New(bookInfo)+"]]></tns:html>");//상품기술서_기술서상세내역-->
             sb.append("</tns:goodsReport>");
             
             
-             sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25417</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
-             sb.append("</tns:goodsReport>");
-
-             sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25246</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
-             sb.append("</tns:goodsReport>");
+            sb.append("<tns:goodsReport>");
+            sb.append("<tns:pedfId>25202</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+            sb.append("<tns:html><![CDATA[031-955-2852]]></tns:html>");//상품기술서_기술서상세내역-->
+            sb.append("</tns:goodsReport>");
              
              sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25359</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
-             sb.append("</tns:goodsReport>");
-             
-             sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25394</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:pedfId>25222</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
              sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
              sb.append("</tns:goodsReport>");
              
@@ -1609,18 +1599,28 @@ public void UptGoods(Goods bookInfo) {
              
              
              sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25290</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:pedfId>25330</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
              sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
              sb.append("</tns:goodsReport>");
              
              
              sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25204</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:pedfId>25359</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
+             sb.append("</tns:goodsReport>");
+
+             sb.append("<tns:goodsReport>");
+             sb.append("<tns:pedfId>25383</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
              sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
              sb.append("</tns:goodsReport>");
              
              sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25229</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:pedfId>25394</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
+             sb.append("</tns:goodsReport>");
+             
+             sb.append("<tns:goodsReport>");
+             sb.append("<tns:pedfId>25395</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
              sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
              sb.append("</tns:goodsReport>");
              
@@ -1630,8 +1630,8 @@ public void UptGoods(Goods bookInfo) {
              sb.append("</tns:goodsReport>");
              
              sb.append("<tns:goodsReport>");
-             sb.append("<tns:pedfId>25202</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
-             sb.append("<tns:html><![CDATA[031-955-2852]]></tns:html>");//상품기술서_기술서상세내역-->
+             sb.append("<tns:pedfId>25450</tns:pedfId>");//상품기술서_기술서상세항목(필수항목은 별첨 확인)-->
+             sb.append("<tns:html><![CDATA[상품상세참조]]></tns:html>");//상품기술서_기술서상세내역-->
              sb.append("</tns:goodsReport>");
            
         }else {

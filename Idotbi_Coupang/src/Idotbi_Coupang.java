@@ -193,7 +193,7 @@ class work {
     private static final String ACCESS_KEY = "42027dad-1937-49ac-867c-1d7699663a35";
     //private static final String ACCESS_KEY = "6f9f604d-4084-4dc9-9221-21fd190bad05"; //精葆辦蝶
     //replace with your own secretKey
-    private static final String SECRET_KEY = "68b91421962d1ec0aa9edf7363ea36375de12224";
+    private static final String SECRET_KEY = "46a6f375f0c38b9746c7ce5985a47f6410f8000d";
     //private static final String SECRET_KEY = "04907579c03a13253acf8963890c1b908522133d";//精葆辦蝶
 	
     

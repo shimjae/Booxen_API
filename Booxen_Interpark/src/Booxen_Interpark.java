@@ -116,7 +116,7 @@ public class Booxen_Interpark {
 		    	System.out.println("=====송장입력 end=====");
 		    	  
 		    	
-			   */
+			   
 				
 				
 				
@@ -160,7 +160,7 @@ public class Booxen_Interpark {
 				
 				System.out.println("=====상품등록  end=====");
 				
-				 
+				 */
 				System.out.println("=====상품수정  start=====");
 				try
 				{
@@ -1553,7 +1553,7 @@ public  String substringByBytes(String str, int beginBytes, int endBytes) {
 		Element saleStatTp = doc.createElement("saleStatTp");
 		 if (bookInfo.get_BOOKSTS().equals("현매") || bookInfo.get_BOOKSTS().equals("정상"))
 		 {
-			 saleStatTp.appendChild(doc.createTextNode("01"));
+			 saleStatTp.appendChild(doc.createTextNode("02"));
 		 }else {
 			 saleStatTp.appendChild(doc.createTextNode("02"));	 
 		 }

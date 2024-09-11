@@ -98,6 +98,7 @@ public class Booxen_GSShop {
 			    	
 			    }catch (Exception e) {				
 				}
+				 
 			    System.out.println("=====주문 end=====");
 				System.out.println("=====상품등록 start=====");				
 				List<Goods> bookList = goodsDAO.GetGoodsList();
@@ -930,9 +931,10 @@ class work {
 		double SALEPRICE = 0;
 
 		try {
+			/*
 			if (Double.parseDouble(bookInfo.get_INRT()) > 80)
 				return;
-
+*/
 			if (Double.parseDouble(bookInfo.get_INRT()) <= 67) {
 				SALEPRICE = Double.parseDouble(bookInfo.get_PRICE()) * 0.9;				
 				BigDecimal incm_civil_amt = new BigDecimal (SALEPRICE);   
