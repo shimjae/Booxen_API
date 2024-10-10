@@ -204,7 +204,7 @@ public class Booxen_Shaplinker {
 		    	try {
 		    		wk.GetTransNoList("APISHOP_0148","dasoda11","33313"); //½ºÅä¾îÆÊ
 		    		wk.GetTransNoList("APISHOP_0276","booxen","50235");   //º£³×ÇÇ¾Æ
-		    		wk.GetTransNoList("APISHOP_0033","AKM1418519641","52816");   //AK
+		    		//wk.GetTransNoList("APISHOP_0033","AKM1418519641","52816");   //AK
 		    	}catch (Exception e) {
 					// TODO: handle exception
 				}
@@ -224,7 +224,7 @@ public class Booxen_Shaplinker {
 			          wk.Get_OrderInfo("APISHOP_0231", "booxen01", "38112"); //»ï¼ºÄ«µå
 			          //wk.Get_OrderInfo("APISHOP_0287", "booxen2020", "22275");//À§¸ÞÇÁ2.0
 			         // wk.Get_OrderInfo("APISHOP_0033", "AKM1418519641", "52816");//AK ¸ô
-			          
+			          wk.Get_OrderInfo("APISHOP_0297", "booxen", "38112"); //µµ¸Å²Ú
 			          
 			          /*
 			          wk.Get_OrderInfo("APISHOP_0321", "LD477577", "51071");  //·Ôµ¥¿Â

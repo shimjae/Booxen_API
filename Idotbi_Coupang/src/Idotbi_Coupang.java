@@ -1269,7 +1269,7 @@ class work {
 
 					String code = jsonObj.get("code").toString();
 					String data ="";
-					if (code.equals("200"))
+					if (code.equals("200") || code.equals("SUCCESS"))
 					{
 						
 						String sData = jsonObj.get("data").toString();
