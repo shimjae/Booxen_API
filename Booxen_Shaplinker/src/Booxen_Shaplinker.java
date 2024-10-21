@@ -211,6 +211,7 @@ public class Booxen_Shaplinker {
 		    	
 		    	//주문
 		    	
+		    	
 			    try
 			    {
 			    
@@ -625,7 +626,7 @@ class work{
 						 Order.set_mall_order_id(((Element)bNode).getElementsByTagName("mall_order_id").item(0).getTextContent());
 						 Order.set_shoplinker_order_id(((Element)bNode).getElementsByTagName("shoplinker_order_id").item(0).getTextContent());
 						 Order.set_quantity(((Element)bNode).getElementsByTagName("quantity").item(0).getTextContent());
-						 if (mall_order_code.equals("APISHOP_0276") || mall_order_code.equals("APISHOP_0010")) //베네피아 공급가
+						 if (mall_order_code.equals("APISHOP_0276") || mall_order_code.equals("APISHOP_0010")|| mall_order_code.equals("APISHOP_0231")) //베네피아 공급가
 						 {
 							 double SELL_TOTAMT =  Double.parseDouble(((Element)bNode).getElementsByTagName("supply_price").item(0).getTextContent()) * Double.parseDouble(Order.get_quantity());
 							 
