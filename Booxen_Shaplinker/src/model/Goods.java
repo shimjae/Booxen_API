@@ -33,7 +33,7 @@ public class Goods {
 	private String WMP_PRODUCT_ID;
 	private String AK_PRODUCT_ID;
     private String IMG_DETAIL_PATH;
-    
+    private String SMCARD_BOCJI_PRODUCT_ID; 
 	
 	
 	public String get_ITEMCD() {
@@ -232,6 +232,13 @@ public class Goods {
 	public void set_SMCARD_PRODUCT_ID(String SMCARD_PRODUCT_ID) {
 	    this.SMCARD_PRODUCT_ID = SMCARD_PRODUCT_ID;
 	}
+	public String get_SMCARD_BOCJI_PRODUCT_ID() {
+	    return SMCARD_BOCJI_PRODUCT_ID;
+	}
+	public void set_SMCARD_BOCJI_PRODUCT_ID(String SMCARD_BOCJI_PRODUCT_ID) {
+	    this.SMCARD_BOCJI_PRODUCT_ID = SMCARD_BOCJI_PRODUCT_ID;
+	}
+	
 	public String get_WMP_PRODUCT_ID() {
 	    return WMP_PRODUCT_ID;
 	}

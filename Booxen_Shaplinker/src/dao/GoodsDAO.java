@@ -264,7 +264,17 @@ public class GoodsDAO {
 	            session.close();
 	        }
 	    }
-	    
+	    public void RegMallProduct_id_SMCARD_BOCJI(HashMap map){
+		   	 
+	        SqlSession session = sqlSessionFactory.openSession();
+	 
+	        try {
+	            session.update("Goods.RegMallProduct_id_SMCARD_BOCJI", map);
+	        } finally {
+	            session.commit();
+	            session.close();
+	        }
+	    }
 	    public void RegMallProduct_id_WMP(HashMap map){
 		   	 
 	        SqlSession session = sqlSessionFactory.openSession();
