@@ -34,6 +34,8 @@ public class Goods {
 	private String AK_PRODUCT_ID;
     private String IMG_DETAIL_PATH;
     private String SMCARD_BOCJI_PRODUCT_ID; 
+    private String EZWELL_PRODUCT_ID;
+    
 	
 	
 	public String get_ITEMCD() {
@@ -259,5 +261,10 @@ public class Goods {
 	public void set_IMG_DETAIL_PATH(String IMG_DETAIL_PATH) {
 	    this.IMG_DETAIL_PATH = IMG_DETAIL_PATH;
 	}
-	
+	public String get_EZWELL_PRODUCT_ID() {
+	    return EZWELL_PRODUCT_ID;
+	}
+	public void set_EZWELL_PRODUCT_ID(String EZWELL_PRODUCT_ID) {
+		this.EZWELL_PRODUCT_ID = EZWELL_PRODUCT_ID;
+	}
 }
