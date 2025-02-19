@@ -553,7 +553,7 @@ class work {
 			sRtn = sRtn + "&saleEndDtm=29991231235959";
 			sRtn = sRtn + "&mnfcCoNm=" + URLEncoder.encode(String.valueOf(bookInfo.get_PUBLISHER()), "euc-kr") ;
 			sRtn = sRtn + "&operMdId=82274";
-			sRtn = sRtn + "&prdClsCd=" + GetCategory(bookInfo);
+			
 			sRtn = sRtn + "&orgpNm=" + URLEncoder.encode("±¹³»", "euc-kr") ;
 			sRtn = sRtn + "&prdNm=" +  URLEncoder.encode(String.valueOf(StringReplace(sName)), "euc-kr") ; 
 			sRtn = sRtn + "&ordPrdTypCd=02";
@@ -561,21 +561,22 @@ class work {
 			if (bookInfo.get_ISBN13().substring(0,1).equals("8"))
 			{
 				sRtn = sRtn + "&taxTypCd=02";
-				
+				sRtn = sRtn + "&prdClsCd=1663279";
 			}else
 			{
 				sRtn = sRtn + "&taxTypCd=01";
+				sRtn = sRtn + "&prdClsCd=" + GetCategory(bookInfo);
 				
 			}			
 			sRtn = sRtn + "&prdTypCd=P";
 			
-			if (Double.parseDouble(bookInfo.get_SALEPRICE()) >= 10000)
+			if (Double.parseDouble(bookInfo.get_SALEPRICE()) >= 12000)
 			{
 				sRtn = sRtn + "&chrDlvYn=N";
-				sRtn = sRtn + "&shipLimitAmt=10000";
+				sRtn = sRtn + "&shipLimitAmt=12000";
 			}else {
 				sRtn = sRtn + "&chrDlvYn=Y";
-				sRtn = sRtn + "&shipLimitAmt=10000";
+				sRtn = sRtn + "&shipLimitAmt=12000";
 				sRtn = sRtn + "&chrDlvcAmt=2500";
 			}
 			
